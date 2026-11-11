@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SyedShayan AI Assistant</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-logo">S</div>
+                <h1>SyedShayan</h1>
+                <p>AI Assistant</p>
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <button id="new-chat-btn" class="new-chat-btn">
+                    <span>＋</span> New Chat
+                </button>
+
+                <h3>◷ Search History</h3>
+
+                <div id="chat-history" class="chat-history">
+                    <!-- Previous chats appear here -->
+                </div>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>⚡ Powered by RAG AI</p>
+                <span>SyedShayan.com</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="chat-header">
+
+                <div class="header-brand">
+
+                    <div class="header-avatar">
+                        🤖
+                    </div>
+
+                    <div>
+                        <h2>SyedShayan AI Assistant</h2>
+                        <p>Ask anything about our website!</p>
+                    </div>
+
+                </div>
+
+                <div class="online-status">
+                    <span class="status-dot"></span>
+                    <span>Online</span>
+                </div>
+
+            </header>
+
+
+            <!-- Chat Messages -->
+            <section id="chat-messages" class="chat-messages">
+
+                <div class="welcome-message">
+
+                    <div class="bot-avatar">🤖</div>
+
+                    <div class="message bot-message">
+
+                        <div class="message-content">
+                            Assalamualaikum! How can I help you today?
+                        </div>
+
+                        <div class="message-meta">
+                            <span class="message-time">Welcome</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Chat Input -->
+            <footer class="chat-footer">
+
+                <form id="chat-form">
+
+                    <div class="input-icon">⌕</div>
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Type your question..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" id="send-btn">
+                        <span>➤</span>
+                    </button>
+
+                </form>
+
+                <p class="input-hint">
+                    ℹ You can ask anything about our website.
+                    Try questions like: "What services do you offer?"
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
